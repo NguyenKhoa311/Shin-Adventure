@@ -1,0 +1,3 @@
+/Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu/cmake-build-debug/CMakeFiles/undefined_game.dir
+/Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu/cmake-build-debug/CMakeFiles/rebuild_cache.dir
