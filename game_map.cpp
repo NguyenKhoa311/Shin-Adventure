@@ -39,12 +39,12 @@ void GameMap::LoadMap(const char *name)
     game_map_.start_x_ = 0;
     game_map_.start_y_ = 0;
 
-    game_map_.file_name_ = name;
+//    game_map_.file_name_ = name;
     fclose(fp);
 }
 
 void GameMap::LoadTiles(SDL_Renderer *screen) {
-    char file_img[70];
+    char file_img[15];
     FILE *fp = nullptr;
 
     for(int i = 0; i < MAX_TILE; i++)
