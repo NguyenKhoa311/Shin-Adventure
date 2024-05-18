@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/cmake-build-debug/
+cmake_ninja_workdir = /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target undefined_game
 
@@ -49,57 +49,85 @@ cmake_ninja_workdir = /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu
 
 build cmake_object_order_depends_target_undefined_game: phony || CMakeFiles/undefined_game.dir
 
-build CMakeFiles/undefined_game.dir/main.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/main.cpp || cmake_object_order_depends_target_undefined_game
+build CMakeFiles/undefined_game.dir/main.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/main.cpp || cmake_object_order_depends_target_undefined_game
   DEP_FILE = CMakeFiles/undefined_game.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
   INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
   OBJECT_DIR = CMakeFiles/undefined_game.dir
   OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
 
-build CMakeFiles/undefined_game.dir/graphics.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/graphics.cpp || cmake_object_order_depends_target_undefined_game
-  DEP_FILE = CMakeFiles/undefined_game.dir/graphics.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
-  INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
-  OBJECT_DIR = CMakeFiles/undefined_game.dir
-  OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
-
-build CMakeFiles/undefined_game.dir/game_map.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/game_map.cpp || cmake_object_order_depends_target_undefined_game
+build CMakeFiles/undefined_game.dir/game_map.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/game_map.cpp || cmake_object_order_depends_target_undefined_game
   DEP_FILE = CMakeFiles/undefined_game.dir/game_map.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
   INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
   OBJECT_DIR = CMakeFiles/undefined_game.dir
   OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
 
-build CMakeFiles/undefined_game.dir/common_game_defs.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/common_game_defs.cpp || cmake_object_order_depends_target_undefined_game
+build CMakeFiles/undefined_game.dir/common_game_defs.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/common_game_defs.cpp || cmake_object_order_depends_target_undefined_game
   DEP_FILE = CMakeFiles/undefined_game.dir/common_game_defs.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
   INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
   OBJECT_DIR = CMakeFiles/undefined_game.dir
   OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
 
-build CMakeFiles/undefined_game.dir/Shinchan.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/Shinchan.cpp || cmake_object_order_depends_target_undefined_game
+build CMakeFiles/undefined_game.dir/Shinchan.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/Shinchan.cpp || cmake_object_order_depends_target_undefined_game
   DEP_FILE = CMakeFiles/undefined_game.dir/Shinchan.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
   INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
   OBJECT_DIR = CMakeFiles/undefined_game.dir
   OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
 
-build CMakeFiles/undefined_game.dir/BaseObject.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/BaseObject.cpp || cmake_object_order_depends_target_undefined_game
+build CMakeFiles/undefined_game.dir/BaseObject.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/BaseObject.cpp || cmake_object_order_depends_target_undefined_game
   DEP_FILE = CMakeFiles/undefined_game.dir/BaseObject.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
   INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
   OBJECT_DIR = CMakeFiles/undefined_game.dir
   OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
 
-build CMakeFiles/undefined_game.dir/Timer.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/Timer.cpp || cmake_object_order_depends_target_undefined_game
+build CMakeFiles/undefined_game.dir/Timer.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/Timer.cpp || cmake_object_order_depends_target_undefined_game
   DEP_FILE = CMakeFiles/undefined_game.dir/Timer.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
   INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
   OBJECT_DIR = CMakeFiles/undefined_game.dir
   OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
 
-build CMakeFiles/undefined_game.dir/Baseball.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/Baseball.cpp || cmake_object_order_depends_target_undefined_game
+build CMakeFiles/undefined_game.dir/Baseball.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/Baseball.cpp || cmake_object_order_depends_target_undefined_game
   DEP_FILE = CMakeFiles/undefined_game.dir/Baseball.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
+  INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
+  OBJECT_DIR = CMakeFiles/undefined_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
+
+build CMakeFiles/undefined_game.dir/Game.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/Game.cpp || cmake_object_order_depends_target_undefined_game
+  DEP_FILE = CMakeFiles/undefined_game.dir/Game.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
+  INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
+  OBJECT_DIR = CMakeFiles/undefined_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
+
+build CMakeFiles/undefined_game.dir/Enemies.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/Enemies.cpp || cmake_object_order_depends_target_undefined_game
+  DEP_FILE = CMakeFiles/undefined_game.dir/Enemies.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
+  INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
+  OBJECT_DIR = CMakeFiles/undefined_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
+
+build CMakeFiles/undefined_game.dir/Explosion.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/Explosion.cpp || cmake_object_order_depends_target_undefined_game
+  DEP_FILE = CMakeFiles/undefined_game.dir/Explosion.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
+  INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
+  OBJECT_DIR = CMakeFiles/undefined_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
+
+build CMakeFiles/undefined_game.dir/TextObject.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/TextObject.cpp || cmake_object_order_depends_target_undefined_game
+  DEP_FILE = CMakeFiles/undefined_game.dir/TextObject.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
+  INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
+  OBJECT_DIR = CMakeFiles/undefined_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/undefined_game.dir
+
+build CMakeFiles/undefined_game.dir/Menu.cpp.o: CXX_COMPILER__undefined_game_Debug /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/Menu.cpp || cmake_object_order_depends_target_undefined_game
+  DEP_FILE = CMakeFiles/undefined_game.dir/Menu.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics -F /Library/Frameworks/ -F /Library/Frameworks/ -std=gnu++17
   INCLUDES = -isystem /Library/Frameworks/SDL2.framework/Headers -iframework /Library/Frameworks -isystem /Library/Frameworks/SDL2_image.framework/Headers -isystem /Library/Frameworks/SDL2_mixer.framework/Headers -isystem /Library/Frameworks/SDL2_ttf.framework/Headers
   OBJECT_DIR = CMakeFiles/undefined_game.dir
@@ -113,7 +141,7 @@ build CMakeFiles/undefined_game.dir/Baseball.cpp.o: CXX_COMPILER__undefined_game
 #############################################
 # Link the executable undefined_game
 
-build undefined_game: CXX_EXECUTABLE_LINKER__undefined_game_Debug CMakeFiles/undefined_game.dir/main.cpp.o CMakeFiles/undefined_game.dir/graphics.cpp.o CMakeFiles/undefined_game.dir/game_map.cpp.o CMakeFiles/undefined_game.dir/common_game_defs.cpp.o CMakeFiles/undefined_game.dir/Shinchan.cpp.o CMakeFiles/undefined_game.dir/BaseObject.cpp.o CMakeFiles/undefined_game.dir/Timer.cpp.o CMakeFiles/undefined_game.dir/Baseball.cpp.o | /Library/Frameworks/SDL2.framework/Versions/A/SDL2
+build undefined_game: CXX_EXECUTABLE_LINKER__undefined_game_Debug CMakeFiles/undefined_game.dir/main.cpp.o CMakeFiles/undefined_game.dir/game_map.cpp.o CMakeFiles/undefined_game.dir/common_game_defs.cpp.o CMakeFiles/undefined_game.dir/Shinchan.cpp.o CMakeFiles/undefined_game.dir/BaseObject.cpp.o CMakeFiles/undefined_game.dir/Timer.cpp.o CMakeFiles/undefined_game.dir/Baseball.cpp.o CMakeFiles/undefined_game.dir/Game.cpp.o CMakeFiles/undefined_game.dir/Enemies.cpp.o CMakeFiles/undefined_game.dir/Explosion.cpp.o CMakeFiles/undefined_game.dir/TextObject.cpp.o CMakeFiles/undefined_game.dir/Menu.cpp.o | /Library/Frameworks/SDL2.framework/Versions/A/SDL2
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6
   LINK_FLAGS = -F /Library/Frameworks/ -framework SDL2_image -F /Library/Frameworks/ -framework SDL2_mixer -framework SDL2_ttf
   LINK_LIBRARIES = -Wl,-rpath,/Library/Frameworks  /Library/Frameworks/SDL2.framework/Versions/A/SDL2
@@ -129,7 +157,7 @@ build undefined_game: CXX_EXECUTABLE_LINKER__undefined_game_Debug CMakeFiles/und
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd "/Users/hoangnv/CLionProjects/Shin Chan Adventure/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -140,7 +168,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu" -B"/Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu/cmake-build-debug"
+  COMMAND = cd "/Users/hoangnv/CLionProjects/Shin Chan Adventure/cmake-build-debug" && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S"/Users/hoangnv/CLionProjects/Shin Chan Adventure" -B"/Users/hoangnv/CLionProjects/Shin Chan Adventure/cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -156,7 +184,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/hoangnv/CLionProjects/Game Shin-chan phiêu lưu/cmake-build-debug
+# Folder: /Users/hoangnv/CLionProjects/Shin Chan Adventure/cmake-build-debug
 
 build all: phony undefined_game
 
@@ -167,14 +195,14 @@ build all: phony undefined_game
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FeatureSummary.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config-version.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config-version.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config-version.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config.cmake /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FeatureSummary.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config-version.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config-version.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config-version.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config.cmake /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FeatureSummary.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config-version.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config-version.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config-version.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config.cmake /Users/hoangnv/CLionProjects/Game$ Shin-chan$ phiêu$ lưu/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/FeatureSummary.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config-version.cmake /Library/Frameworks/SDL2.framework/Resources/CMake/sdl2-config.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config-version.cmake /Library/Frameworks/SDL2_image.framework/Resources/CMake/sdl2_image-config.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config-version.cmake /Library/Frameworks/SDL2_mixer.framework/Resources/CMake/sdl2_mixer-config.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config-version.cmake /Library/Frameworks/SDL2_ttf.framework/Resources/CMake/sdl2_ttf-config.cmake /Users/hoangnv/CLionProjects/Shin$ Chan$ Adventure/CMakeLists.txt CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################

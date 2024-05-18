@@ -1,7 +1,3 @@
-//
-// Created by Hoang Nguyen on 28/03/2024.
-//
-
 #ifndef SHINCHAN_H
 #define SHINCHAN_H
 
@@ -10,62 +6,89 @@
 #include "BaseObject.h"
 #include "Baseball.h"
 
-#define GRAVITY_SPEED 9
-#define MAX_FALL_SPEED 30
-#define SHIN_SPEED 20
 #define SHIN_JUMP 50
+#define SHIN_SPEED 20
+#define SHIN_DAME 50
+#define SHIN_HP 100
+#define REPEL_DISTANCE 6
+
 class Shin : public BaseObject
 {
 public:
     Shin();
     ~Shin();
 
-    enum WalkType
+    enum STATE
     {
-        WALK_RIGHT = 0,
-        WALK_LEFT = 1,
-//        FALL = 2,
+        RUN_RIGHT = 0,
+        RUN_LEFT = 1,
+        HIT_LEFT  = 2,
+        HIT_RIGHT = 3,
     };
 
-    bool LoadImg(const char * path, SDL_Renderer* screen) override;
-    void Show(SDL_Renderer* des);
-    void HandleInputAction(SDL_Event events, SDL_Renderer* screen);
-    void UpdatePlayer(SDL_Renderer* des);
+    bool LoadImg(const char* path, SDL_Renderer* renderer) override;
+    void UpdateFrame(SDL_Renderer* renderer);
+    void HandleInput(SDL_Renderer* renderer, SDL_Event events);
+    void HandleKeyDown(SDL_Renderer* renderer, SDL_Keycode key);
+    void HandleKeyUp(SDL_Keycode key);
+    void HandleHitState(SDL_Renderer* renderer);
+    void HandleAttack(SDL_Renderer* renderer);
+    void HandleAttackState(SDL_Renderer* renderer);
+    void HandleMoveState(SDL_Renderer* renderer);
+    void UpdateJumpState(SDL_Renderer* renderer);
+    void UpdateGroundState(SDL_Renderer* renderer);
+    void UpdateState(SDL_Renderer* renderer);
     void set_clips();
+    void set_Shin_hp(const int& HP) {hp = HP;}
+    [[nodiscard]] int get_Shin_hp() const {return hp;}
+    void set_Shin_state(const int&state) {Shin_state = state;}
+    void RenderHealthBar(SDL_Renderer* renderer) const;
+    SDL_Rect get_Shin_frame();
+    [[nodiscard]] float get_x_pos() const {return x_pos;}
+    [[nodiscard]] int get_hit_time() const {return HIT_TIME;}
+    Uint32 set_lastHitTime(const Uint32& time) {return lastHitTime = time;}
+    [[nodiscard]] Uint32 get_lastHitTime() const {return lastHitTime;}
+    [[nodiscard]] bool get_die_state() const {return die;}
 
-    void DoPlayer(Map& map_data);
-    void CheckToMap(Map& map_data);
+    static bool isEmptyTile(int value);
+    void Action(Map& map_data, Mix_Chunk* star_s);
+    void CheckCollision(Map& map_data, Mix_Chunk* star_sound);
+    void CheckHorizontalCollision(Map &map_data, Mix_Chunk* star_sound);
+    void CheckVerticalCollision(Map &map_data, Mix_Chunk* star_sound);
+    void CheckTileCollision(Map &map_data, Mix_Chunk* star_sound, int y1, int x1, int y2, int x2, float* pos, int reset_pos, bool vertical);
     void SetMapXY(const int map_x, const int map_y) {map_x_ = map_x, map_y_ = map_y;}
-    void CenterEntityOnMap(Map& map_data) const;
+    void CenterOnShin(Map& map_data) const;
 
-    void set_baseball_list(std::vector<Baseball*> baseball_list) {p_baseball_list = std::move(baseball_list);}
+    // baseball func
     [[nodiscard]] std::vector<Baseball*> get_baseball_list() const {return p_baseball_list;}
-    void HandleBaseball(SDL_Renderer* des);
+    void HandleBaseball(SDL_Renderer* renderer, Mix_Chunk* throw_s);
+    void RemoveBaseball(const int& idx);
+    // star func
     void Count_star();
-private:
+    [[nodiscard]] int get_star_count() const {return star_count;}
 
+private:
     int star_count;
     std::vector<Baseball*> p_baseball_list;
-    float x_val;
-    float y_val;
-
+    float x_speed;
+    float y_speed;
     float x_pos;
     float y_pos;
-
     int width_frame;
     int height_frame;
-
-    SDL_Rect frame_clip[10]{};
-
+    SDL_Rect frame_clip[FRAMES]{};
     Input input_type{};
     int frame;
-    int status;
+    int Shin_state;
     bool on_ground;
-
+    bool has_attacked;
+    bool being_hit;
     int map_x_;
     int map_y_;
-
-    int comeback_time;
+    int hp;
+    bool die;
+    const int HIT_TIME = 500;
+    Uint32 lastHitTime = 0;
 };
 
 #endif //SHINCHAN_H

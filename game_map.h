@@ -11,25 +11,25 @@
 class TileMat : public BaseObject
 {
 public:
-    TileMat() {;}
-    ~TileMat() {;}
+    TileMat() = default;
+    ~TileMat() = default;
 };
 
 class GameMap
 {
 public:
-    GameMap() {;}
-    ~GameMap() {;}
+    GameMap() = default;
+    ~GameMap() = default;
 
     void LoadMap(const char* name);
-    void LoadTiles(SDL_Renderer* screen);
-    void DrawMap(SDL_Renderer* screen);
-    void SetMap(Map& map_data) {game_map_ = map_data;};
-    Map getMap() const {return game_map_;}
+    void LoadTiles(SDL_Renderer* renderer);
+    void DrawMap(SDL_Renderer* renderer);
+    void SetMap(Map& map_data) {game_map = map_data;};
+    [[nodiscard]] Map getMap() const {return game_map;}
 
 private:
-    Map game_map_;
-    TileMat tile_mat[MAX_TILE];
+    Map game_map{};
+    TileMat tile_list[MAX_TILE];
 };
 
 #endif //UNDEFINED_GAME_GAME_MAP_H

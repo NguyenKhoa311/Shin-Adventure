@@ -13,13 +13,13 @@ public:
     ~Timer();
 
     void start();
-    void stop();
-    void pause();
-    void unpause();
+//    void stop();
+//    void pause();
+//    void unpause();
 
     [[nodiscard]] int get_ticks() const;
-    [[nodiscard]] bool is_started() const;
-    [[nodiscard]] bool is_paused() const;
+//    [[nodiscard]] bool is_started() const;
+//    [[nodiscard]] bool is_paused() const;
 
 private:
     int start_tick;
