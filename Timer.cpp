@@ -1,6 +1,3 @@
-//
-// Created by Hoang Nguyen on 31/03/2024.
-//
 #include "Timer.h"
 
 Timer::Timer() {
