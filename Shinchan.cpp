@@ -315,17 +315,16 @@ bool Shin::isEmptyTile(int value) {
 }
 
 void Shin::CheckCollision(Map &map_data, Mix_Chunk* star_sound) {
-    // Check horizontal collision
+    // Check horizontal
     CheckHorizontalCollision(map_data, star_sound);
 
-    // Check vertical collision
+    // Check vertical
     CheckVerticalCollision(map_data, star_sound);
 
     // Update position
     x_pos += x_speed;
     y_pos += y_speed;
 
-    // Boundary conditions
     if (x_pos < 0) {
         x_pos = 0;
     } else if ((int)x_pos + width_frame > map_data.max_x) {
@@ -401,155 +400,6 @@ void Shin::CheckTileCollision(Map &map_data, Mix_Chunk* star_sound, int y1, int 
         }
     }
 }
-
-
-//void Shin::CheckCollision(Map &map_data, Mix_Chunk* star_sound) {
-//    // check horizontal
-//
-//    int x1 = (int) (x_pos + x_speed) / TILE_SIZE;
-//    int x2 = ((int) x_pos + (int) x_speed + width_frame) / TILE_SIZE;
-//
-//    int y1 = (int)y_pos/TILE_SIZE;
-//    int y2 = ((int)y_pos + height_frame) / TILE_SIZE;
-//
-//    if(x1 >= 0 && x2 < MAX_MAP_X && y1 >= 0 && y2 < MAX_MAP_Y)
-//    {
-//        if(x_speed > 0) // move right
-//        {
-//            int top_right = map_data.tiles[y1][x2];
-//            int bottom_right = map_data.tiles[y2][x2];
-//
-//            if(top_right == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y1][x2] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else if(bottom_right == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y2][x2] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else
-//            {
-//                if(!isEmptyTile(top_right) || !isEmptyTile(bottom_right) )
-//                {
-//                    x_pos = (float)x1 * TILE_SIZE;
-//                    x_speed = 0;
-//                }
-//            }
-//        }
-//        else if(x_speed < 0) // move left
-//        {
-//            int top_left = map_data.tiles[y1][x1];
-//            int bottom_left = map_data.tiles[y2][x1];
-//
-//            if(top_left == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y1][x1] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else if(bottom_left == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y2][x1] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else
-//            {
-//                if(!isEmptyTile(top_left) || !isEmptyTile(bottom_left) )
-//                {
-//                    x_pos = (float)(x1 + 1) * TILE_SIZE;
-//                    x_speed = 0;
-//                }
-//            }
-//        }
-//    }
-//
-//    //check vertical
-//
-//    int width_min = width_frame < TILE_SIZE ? width_frame : TILE_SIZE;
-//    x1 = ((int)x_pos + 20)/TILE_SIZE;
-//    x2 = ((int)x_pos + width_min)/TILE_SIZE;
-//
-//    y1 = (int) (y_pos + y_speed) / TILE_SIZE;
-//    y2 = ((int) y_pos + (int) y_speed + height_frame - 1) / TILE_SIZE;
-//
-//    if(x1 >= 0 && x2 < MAX_MAP_X && y1 >= 0 && y2 < MAX_MAP_Y)
-//    {
-//        if(y_speed > 0) // fall
-//        {
-//            int bottom_left = map_data.tiles[y2][x1];
-//            int bottom_right = map_data.tiles[y2][x2];
-//            if(bottom_left == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y2][x1] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else if(bottom_right == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y2][x2] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else
-//            {
-//                if(!isEmptyTile(bottom_left) || !isEmptyTile(bottom_right) )
-//                {
-//                    y_pos = (float) y2 * TILE_SIZE;
-//                    y_pos -= (float)(height_frame + 1);
-//                    y_speed = 0;
-//                    on_ground = true;
-//                }
-//            }
-//        }
-//        else if(y_speed < 0) // jump
-//        {
-//            int top_left = map_data.tiles[y1][x1];
-//            int top_right = map_data.tiles[y1][x2];
-//            if(top_left == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y1][x1] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else if(top_right == STAR)
-//            {
-//                Mix_PlayChannel(-1, star_sound,0);
-//                map_data.tiles[y1][x2] = BLANK_TILE;
-//                Count_star();
-//            }
-//            else
-//            {
-//                if(!isEmptyTile(top_left) || !isEmptyTile(top_right) )
-//                {
-//                    y_pos = (float) (y1 + 1) * TILE_SIZE;
-//                    y_speed = 0;
-//                }
-//            }
-//        }
-//    }
-//
-//    x_pos += x_speed;
-//    y_pos += y_speed;
-//
-//    if(x_pos < 0)
-//    {
-//        x_pos = 0;
-//    }
-//    else if( (int)x_pos + width_frame > map_data.max_x)
-//    {
-//        x_pos = (float)map_data.max_x - (float)width_frame - 1;
-//    }
-//
-//    if(y_pos > (float)map_data.max_y || get_Shin_hp() <= 0)
-//    {
-//        die = true;
-//    }
-//}
 
 void Shin::RenderHealthBar(SDL_Renderer* renderer) const {
     int barWidth = hp;
