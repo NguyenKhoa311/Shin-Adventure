@@ -112,7 +112,6 @@ void Game::setup() {
     Game::isRunning = true;
     Game::quit = false;
     Game::GameOver = false;
-//    Game::Win = false;
 }
 
 void Game::Quit() {
