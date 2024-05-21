@@ -1,6 +1,3 @@
-//
-// Created by Hoang Nguyen on 21/04/2024.
-//
 #include "Enemies.h"
 
 Enemies::Enemies() {
@@ -122,7 +119,6 @@ void Enemies::InitEnemies() {
     y_velo = 0;
     if(get_move_type() == 0) {input_type.left = 0;}
     else input_type.left = 1;
-//    input_type.left = 1;
 }
 
 void Enemies::CheckCollision(Map& map_data) {
