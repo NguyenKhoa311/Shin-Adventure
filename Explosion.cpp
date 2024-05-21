@@ -1,6 +1,3 @@
-//
-// Created by Hoang Nguyen on 25/04/2024.
-//
 #include "Explosion.h"
 
 Explosion::Explosion() {
