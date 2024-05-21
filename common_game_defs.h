@@ -59,14 +59,13 @@ static const std::vector<int> enemy_checkValues = {BLANK_TILE, TREE, DIRECT_BOAR
 #define GRAVITY_SPEED 9
 #define MAX_FALL_SPEED 30
 
-/*BUTTON*/
-//MENU
+// MENU
 #define MENU_ITEM 3
 #define PLAY 0
 #define EXIT 1
 #define INFO 2
 
-//END
+// END_MENU
 #define RESTART 0
 #define BACK 2
 
@@ -74,10 +73,8 @@ struct Map
 {
     int start_x;
     int start_y;
-
     int max_x;
     int max_y;
-
     int tiles[MAX_MAP_Y][MAX_MAP_X];
 };
 
