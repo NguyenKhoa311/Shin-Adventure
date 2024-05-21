@@ -1,6 +1,3 @@
-//
-// Created by Hoang Nguyen on 06/04/2024.
-//
 #include "Baseball.h"
 
 Baseball::Baseball() {
