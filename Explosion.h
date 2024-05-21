@@ -1,7 +1,3 @@
-//
-// Created by Hoang Nguyen on 25/04/2024.
-//
-
 #ifndef UNDEFINED_GAME_EXPLOSION_H
 #define UNDEFINED_GAME_EXPLOSION_H
 
