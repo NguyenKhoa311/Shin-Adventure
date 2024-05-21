@@ -1,6 +1,3 @@
-//
-// Created by Hoang Nguyen on 29/03/2024.
-//
 #include "BaseObject.h"
 BaseObject::BaseObject() {
     p_object = nullptr;
