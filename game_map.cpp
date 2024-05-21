@@ -1,6 +1,3 @@
-//
-// Created by Hoang Nguyen on 27/03/2024.
-//
 #include "game_map.h"
 
 void GameMap::LoadMap(const char *name)
