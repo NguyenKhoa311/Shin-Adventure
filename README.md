@@ -28,17 +28,17 @@
 ![image](https://github.com/NguyenKhoa311/Shin-Adventure/blob/master/image/game_demo.png)
 
 ## **Setup**
-- *Sử dụng IDE: CLion (mình đang dùng Version CLion 2023.1.5)*
+- *Yêu cầu: sử dụng IDE CLion (mình đang dùng Version CLion 2023.1.5) và máy tính phải được cài đặt sẵn các thư viện SDL, SDL_image, SDL_mixer, SDL_ttf* 
   1. Khởi động Clion đặt tên và tạo project mới.
   2. Vào mục Terminal ở phía dưới chương trình và gõ lệnh:
    ```
      git clone https://github.com/NguyenKhoa311/Shin-Adventure
    ```
-  3. Vào thư mục Shin-Adventure vừa clone về máy và chọn file CmakeList.txt:
+  3. Vào thư mục Shin-Adventure vừa clone về máy và chọn file CmakeLists.txt:
      
     ![image](https://github.com/NguyenKhoa311/Shin-Adventure/blob/master/image/step1.png)
   
-    Copy nội dung từ file này và paste vào file CmakeList.txt của project mới tạo:
+    Copy nội dung từ file này và paste vào file CmakeLists.txt của project mới tạo:
   
     ![image](https://github.com/NguyenKhoa311/Shin-Adventure/blob/master/image/step2.png)
     ![image](https://github.com/NguyenKhoa311/Shin-Adventure/blob/master/image/step3.png)
@@ -52,7 +52,31 @@
     ![image](https://github.com/NguyenKhoa311/Shin-Adventure/blob/master/image/step5.png)
 
     Nhấn Ok vậy là bạn đã hoàn thành cài đặt game và có thể ấn Run (hình tam giác) để chạy game.
+  
+## **See also**  
 
+### *Các kỹ thuật sử dụng*  
+- Thư viện SDL2.0
+- Sử dụng nhiều class, vector, tách file, ghi đè, ...
+- Kĩ thuật tilemap
+- Xử lý thời gian, thao tác chuột và bàn phím, âm thanh, hình ảnh, chữ. 
+- Tạo menu
+
+### *Nguồn tham khảo* 
+- Cách xây dựng cấu trúc game, kĩ thuật Tile Map, tạo Menu game: tham khảo từ kênh youtube [PhátTriểnPhầnMềm123AZ](https://www.youtube.com/c/Ph%C3%A1tTri%E1%BB%83nPh%E1%BA%A7nM%E1%BB%81m123AZ/featured) và github [Snake Game](https://github.com/trongminh03/Snake-Game/blob/main/src/Menu.cpp)
+
+- Cách sử dụng thư viện SDL2.0: thảo khảo trên trang [StudyPlan.dev](https://www.studyplan.dev/sdl-dev/sdl-setup-mac) và [lazyfoo.net](https://lazyfoo.net/tutorials/SDL/index.php)
+  
+- Hình ảnh: chụp cắt từ game [Crayon Shinchan Phiêu Lưu (Cậu Bé Bút Chì)](https://gamevui.vn/crayon-shinchan-phieu-luu/game) và tự tìm kiếm trên Google
+
+- Âm thanh: từ các trang free âm thanh trên Google
+
+### *Hướng phát triển*
+- Cải thiện thêm menu game bật/tắt âm thanh, pause game.
+  
+- Thêm tính năng lưu điểm các lượt chơi, điểm cao nhất.
+  
+- Cập nhật thêm nhiều map chơi.
   
 
     
