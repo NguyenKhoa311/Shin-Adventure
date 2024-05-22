@@ -64,6 +64,8 @@
 
 ### *Nguồn tham khảo* 
 - Cách xây dựng cấu trúc game, kĩ thuật Tile Map, tạo Menu game: tham khảo từ kênh youtube [PhátTriểnPhầnMềm123AZ](https://www.youtube.com/c/Ph%C3%A1tTri%E1%BB%83nPh%E1%BA%A7nM%E1%BB%81m123AZ/featured) và github [Snake Game](https://github.com/trongminh03/Snake-Game/blob/main/src/Menu.cpp)
+  
+- Sử dụng [Chat GPT](https://chatgpt.com/?oai-dm=1) để sửa lỗi, xây dựng 1 số hàm và optimize code.
 
 - Cách sử dụng thư viện SDL2.0: thảo khảo trên trang [StudyPlan.dev](https://www.studyplan.dev/sdl-dev/sdl-setup-mac) và [lazyfoo.net](https://lazyfoo.net/tutorials/SDL/index.php)
   
